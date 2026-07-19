@@ -17,7 +17,7 @@ function enviarDatos() {
    //console.log(datos)
    
          
-    fetch("../recibir.php", {method: 'POST', body: JSON.stringify(datos)})
+    fetch("https://sensor-nuevo-n3051udz5-heyden2014s-projects.vercel.app/recibir.php", {method: 'POST', body: JSON.stringify(datos)})
       
     .then(response=>response.json())
         .then((data)=>{
